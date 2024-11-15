@@ -1,0 +1,130 @@
+:root {
+    --bg-color-light: rgba(255, 255, 255, 0.1);
+    --bg-color-dark: rgba(0, 0, 0, 0.85);
+    --text-color-light: #f8f8f2;
+    --neon-green: #50fa7b;
+    --neon-green-hover: #40e07b;
+    --light-purple: #bd93f9;
+    --red-error: #ff5555;
+    --border-dark: #44475a;
+    --border-focus: #50fa7b;
+    --button-bg: #50fa7b;
+    --button-text: #282a36;
+    --button-hover: #40e07b;
+    --list-item-bg: rgba(80, 250, 123, 0.2);
+    --box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.snippet-creation-form {
+    background-color: var(--bg-color-light);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color-light);
+}
+
+h2 {
+    color: var(--neon-green);
+    margin-bottom: 20px;
+}
+
+.error-message {
+    color: var(--red-error);
+    margin-bottom: 15px;
+}
+
+.code-terminal {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.output-area {
+    background: var(--bg-color-dark);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+    overflow-y: auto;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prompt {
+    color: var(--light-purple);
+    margin-right: 10px;
+}
+
+.input-field,
+.code-textarea,
+.language-select,
+.style-select,
+.line-numbers-checkbox {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--border-dark);
+    border-radius: 5px;
+    background: var(--bg-color-light);
+    color: var(--text-color-light);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus,
+.code-textarea:focus,
+.language-select:focus,
+.style-select:focus {
+    border-color: var(--border-focus);
+}
+
+.code-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.checkbox-label {
+    color: var(--text-color-light);
+}
+
+.submit-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+.code-preview {
+    margin-top: 20px;
+    background: var(--bg-color-dark);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--box-shadow);
+}
+
+.code-preview h3 {
+    color: var(--neon-green);
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--list-item-bg);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+:root {
+    --bg-color-dark: rgba(0, 0, 0, 0.85);
+    --text-color-light: #f8f8f2;
+    --neon-green: #50fa7b;
+    --neon-pink: #ff79c6;
+    --box-shadow-navbar: 0 2px 10px rgba(0, 0, 0, 0.5);
+    --navbar-padding: 15px 30px;
+    --navbar-gap: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color-dark);
+    padding: var(--navbar-padding);
+    box-shadow: var(--box-shadow-navbar);
+    position: relative;
+    z-index: 100;
+}
+
+.navbar-title {
+    font-size: 1.5rem;
+    color: var(--neon-green);
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: var(--navbar-gap);
+}
+
+.navbar-item {
+    color: var(--text-color-light);
+    cursor: pointer;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.navbar-item:hover {
+    color: var(--neon-pink);
+    transform: scale(1.05);
+}
