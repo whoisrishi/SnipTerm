@@ -8,7 +8,7 @@ import useAuth from './useAuth';
 import { SnippetEditForm } from './newEditSnippet';
 
 const App = () => {
-    const { username } = useAuth(); // Get username from useAuth
+    // const { username } = useAuth(); // Get username from useAuth
 
     return (
         <Router>
@@ -17,7 +17,6 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<SnippetList />} />
                     <Route path="/create" element={<SnippetCreateForm />} />
-                    {/* Add more routes as needed */}
                     <Route path="/edit/:snippetId" element={<SnippetEditForm />} /> {/* New route for editing snippets */}
                     
                 </Routes>
